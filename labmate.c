@@ -15,7 +15,7 @@ int team[MAX_STUDENTS] ;
 int n_team_members[MAX_STUDENTS / 2] ;
 int conflict[MAX_STUDENTS][MAX_STUDENTS] ;
 
-int read_student_list(char *argv) 
+int read_student_list(char **argv) 
 {
 	FILE * fp ;
 	char * b ;
