@@ -32,8 +32,13 @@ int read_student_list()
 
 	for (i = 0 ; i < n_students ; i++) 
 		conflict[i][i] = 0 ;
-
+	for (i=0;i<n_students;i++){
+		if(!(19600000<students[i]&&students[i]<21800000)){
+		fprintf(stderr,"not valid!");
+		exit(1);
 	// TODO: check if a given student ID is valid.
+}
+}
 }
 
 int get_student_index(int id) 
